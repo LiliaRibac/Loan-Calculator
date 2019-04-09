@@ -46,7 +46,7 @@ document.getElementById('results').style.display = 'block';
 document.getElementById('loading').style.display = 'none';
     } else {
 
-showError("Please ckeck you numbers ")
+showError("Please check you numbers ")
 
     }
 }
@@ -72,6 +72,9 @@ function showError(error){
     setTimeout(clearError,3000);
 
     document.getElementById('loading').style.display = 'none';
+    //Show loader
+document.getElementById('loading').style.display = 'block';
+setTimeout(calculateResults, 2000);
 }
 
 //Clear error
